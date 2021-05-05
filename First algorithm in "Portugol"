@@ -1,0 +1,22 @@
+Português estruturado:
+
+algorítmo primeiro:
+//    Síntese
+//    Objetivo: Analisar a temperatura.
+//    Entrada: Temperatura
+//    Saída: mensagem de roupa de frio ou roupa de calor
+
+Principal 
+        //Declarações
+        inteiro temperatura;
+        //Instruções
+        escreva("informe a temperatura:");
+        leia (temperatura);
+        se (temperatura > 10) entao
+            escreva ("Jovem");
+    senao
+            escreva ("Adulto");
+    fimse
+fimPrincipal
+
+Linguagem natural: Medir temperatura. Se for abaixo ou igual a 10, vestir roupas de frio, se não, vestir roupas de calor.
