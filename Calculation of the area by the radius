@@ -1,0 +1,22 @@
+
+algoritmo calculoAreaporRaio;
+// Síntese
+// Objetivo: Construir um algoritmo que calcule a àrea de um círculo cujo raio seja fornecido pelo usuário usando,
+//área = 3.14 x raio2
+// Entrada :Raio
+// Saída :Área
+
+
+principal
+// Declarações
+real raio, area;
+// Instruções
+// Perguntar para o usuário qual é o valor do ráio. - ENTRADA
+escreva("Digite o valor do raio:"); //escrever o dado na tela.
+leia(raio);//receber, na variável raio, o dado digitado.
+// Calcular a área.- PROCESSAMENTO
+area = 3.14 * raio * raio;
+//Dar o resultado para o usurário. - SAÍDA
+escreval(raio);
+escreval(area);
+fimPrincipal
