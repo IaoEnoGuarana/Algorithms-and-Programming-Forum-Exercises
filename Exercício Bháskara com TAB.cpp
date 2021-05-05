@@ -1,0 +1,37 @@
+/* Leia 3 valores de ponto flutuante e efetue o cálculo das raízes da equação de Bhaskara. Se não for possível calcular
+ as raízes, mostre a mensagem correspondente “Impossivel calcular”, caso haja uma divisão por 0 ou raiz de numero negativo.
+
+Entrada
+Leia três valores de ponto flutuante (double) A, B e C.
+
+Saída
+Se não houver possibilidade de calcular as raízes, apresente a mensagem "Impossivel calcular".
+ Caso contrário, imprima o resultado das raízes com 5 dígitos após o ponto, com uma mensagem correspondente conforme 
+ exemplo abaixo.
+  Imprima sempre o final de linha após cada mensagem.
+  */
+
+#include <stdio.h>//Puxando biblioteca de entrada e de saída.
+#include <math.h>//Puxando biblioteca de cálculos matemáticos.
+int main(){//Início do algorítmo.
+	double a, b, c, x1, x2, delta; //Declaração de variáveis reais em long float.
+	
+	printf ("Digite o valor de a, b e c sequencialmente: \n"); //Pedindo dados de entrada.
+	scanf ("%lf""%lf""%lf", &a, &b, &c);//Lendo dados de entrada.
+	
+	delta = pow(b,2)-4*a*c;
+	
+	if (a == 0 or delta < 0){ //Condicional if{}
+	
+	printf ("Impossivel calcular!\n");
+	}
+	else {
+		x1 = (-(b) + sqrt(delta))/ (2*a);
+		x2 = (-(b) - sqrt(delta))/ (2*a);
+		printf ("X'= %.2lf\tX''= %.2lf\n", x1, x2);//Mostrando dados de saída
+	}
+	
+	
+	
+	return 0;
+}
